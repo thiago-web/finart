@@ -5,10 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Finart · Publicidade e Serviços Gráficos</title>
+        <title>Finart  - Publicidade e Serviços Gráficos</title>
         <!-- Favicon-->
-        <link style="border-radius: 60px; box-shadow: 0px 0px 2px #888; padding: 0.5em 0.6em;" 
-        rel="icon" type="image/x-icon" href="assets/logotipo.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -17,22 +16,19 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="height: 95px;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img  style=" width: auto; height: 95px;" 
-                    src="assets/img/navbar/navbar-1.png" alt="..." />
-                </a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/logotipo.png" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <!-- <li class="nav-item"><a class="nav-link" href="#services">Vantagens</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Nossos Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Ambientes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Localizações</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
@@ -44,18 +40,52 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Bem vindo(a) à Finart</div>
-                <div class="masthead-heading text-uppercase">Publicidade e Serviços Gráficos</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Saber mais</a>
+                <div class="masthead-subheading">Bem vindo(a) à [Empresa]</div>
+                <div class="masthead-heading text-uppercase">Missão, Valores, Visão</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Saber mais</a>
             </div>
         </header>
-        
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Serviços</h2>
+                    <h3 class="section-subheading text-muted">Texto </h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Serviço 1</h4>
+                        <p class="text-muted">Texto informátivo 1</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Serviço 2</h4>
+                        <p class="text-muted">Texto informátivo 2</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Serviço 3</h4>
+                        <p class="text-muted">Texto informátivo 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Nossos Serviços</h2>
-                    <h3 class="section-subheading text-muted">A escolha perfeita para a imagem da sua empresa ser reconhecida na região !</h3>
+                    <h2 class="section-heading text-uppercase">Ambientes</h2>
+                    <h3 class="section-subheading text-muted">Invista nos nossos ambientes planejados para o seu lar.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -65,11 +95,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img style="width: auto ; height: auto;" class="img-fluid" src="assets/img/ambientes/1.jpg" alt="..." />
+                                <img style="width: auto ; height: auto;" class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Carimbos Personalizados</div>
-                                <div class="portfolio-caption-subheading text-muted" >Imagem Ilustrativas</div>
+                                <div class="portfolio-caption-heading">Cozinha</div>
+                                <div class="portfolio-caption-subheading text-muted" >Imagem Ilustrativa</div>
                             </div>
                         </div>
                     </div>
@@ -80,10 +110,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/ambientes/2.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Sacolas Plásticas</div>
+                                <div class="portfolio-caption-heading">Home Theater</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -95,10 +125,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/ambientes/3.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Blocos e Talões</div>
+                                <div class="portfolio-caption-heading">Banheiro</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -110,10 +140,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/ambientes/4.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Artes Digitais</div>
+                                <div class="portfolio-caption-heading">Dormitórios</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -125,16 +155,16 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/ambientes/5.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Fachadas e Lonas</div>
+                                <div class="portfolio-caption-heading">Closet</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                         <!-- Portfolio item 6 -->
+                    <!-- <div class="col-lg-4 col-sm-6">
+                         Portfolio item 6
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
@@ -143,13 +173,13 @@
                                 <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Panfletos</div>
+                                <div class="portfolio-caption-heading">Lavanderia</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 7-->
+                        <!-- Portfolio item 6-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
                                 <div class="portfolio-hover">
@@ -158,7 +188,7 @@
                                 <img class="img-fluid" src="assets/img/ambientes/7.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Cartões de Visitas</div>
+                                <div class="portfolio-caption-heading">Studio</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
