@@ -2,12 +2,12 @@
 <html lang="pt-bt">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Finart  - Publicidade e Serviços Gráficos</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/logotipo.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -20,19 +20,18 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/logotipo.png" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img style="height: 40px; width: 100px"  src="assets/img/navbar/navbar-1.png" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Ambientes</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Nossos Serviços</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Localizações</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Atendimento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Localização</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Solicitar um orçamento</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,17 +39,17 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Bem vindo(a) à [Empresa]</div>
-                <div class="masthead-heading text-uppercase">Missão, Valores, Visão</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Saber mais</a>
+                <div class="masthead-subheading">Bem vindo(a) à Finart</div>
+                <div class="masthead-heading text-uppercase">Um novo conceito de identidade visual!</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Saber mais</a>
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <!-- <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Serviços</h2>
-                    <h3 class="section-subheading text-muted">Texto </h3>
+                    <h2 class="section-heading text-uppercase">Nossos Serviços</h2>
+                    <h3 class="section-subheading text-muted"> Escolha entre um dos nossos Serviços</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -79,13 +78,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Ambientes</h2>
-                    <h3 class="section-subheading text-muted">Invista nos nossos ambientes planejados para o seu lar.</h3>
+                    <h2 class="section-heading text-uppercase">Nossos Serviços</h2>
+                    <h3 class="section-subheading text-muted">Conheça os nossos serviços dedicados a sua empresa !</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -235,7 +234,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="Imagem" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/.jpg" alt="Imagem" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Mês Ano</h4>
@@ -334,8 +333,8 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contate-nos</h2>
-                    <h3 class="section-subheading text-muted">Preencha as informações abaixo para nós podermos entrar em contato com você.</h3>
+                    <h2 class="section-heading text-uppercase">Solicitar um orçamento</h2>
+                    <h3 class="section-subheading text-muted">Preencha as informações abaixo e nos conte como nós podemos te ajudar !</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -423,9 +422,9 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Cozinha</h2>
+                                    <h2 class="text-uppercase">Cartões de Visita</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/ambientes/1.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -458,9 +457,9 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Home Theater</h2>
+                                    <h2 class="text-uppercase">Banners, Adesivos e Lonas</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/ambientes/2.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -493,9 +492,9 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Banheiro</h2>
+                                    <h2 class="text-uppercase">Logotipos</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/ambientes/3.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -530,7 +529,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Dormitórios</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/ambientes/4.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -565,7 +564,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Closet</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/ambientes/5.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -600,7 +599,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Nome do Projeto</h2>
                                     <p class="item-intro text-muted">Descrição do projeto.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/ambientes/6.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
                                     <p>Informações do projeto!</p>
                                     <ul class="list-inline">
                                         <li>
