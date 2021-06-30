@@ -30,11 +30,18 @@ function telefone($value){
 $emailenviar  = $_POST['email'];
 $nome         = $_POST['nome'];
 $telefone     = $_POST['telefone'];
-$mensagem      = $_POST['mensagem'];
+$mensagem     = $_POST['mensagem'];
 
+// );
 
+// Váriáveis para enviar mensagem no WhatsApp
+$num_whats = telefone($telefone);
+$num_whats = to_numero($num_whats);
+$mensagem  = preg_replace('/[ -]+/' , '%20' , $mensagem);
+echo $mensagem;
+$link = "https://api.whatsapp.com/send?phone=55".$num_whats."&text=".$mensagem;
 
-// Emails para quem será enviado o formulário
+// Email para quem será enviado o formulário
 
 $destino     = $emailenviar;
 $assunto     = " Você possui uma nova mensagem de : | $nome";
@@ -95,11 +102,11 @@ text-decoration: none;
       </table>
   </html>";
 
-$enviaremail = mail($destino, $assunto, $arquivo, $headers);
-if($enviaremail)
-{
-    $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
-    echo    ($mgm);
-} 
-else {}
+// $enviaremail = mail($destino, $assunto, $arquivo, $headers);
+// if($enviaremail)
+// {
+//     $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
+//     echo    ($mgm);
+// } 
+// else {}
 ?>

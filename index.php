@@ -311,7 +311,7 @@
             </div>
         </section>
         <!-- Clients-->
-        <!-- <div class="py-5">
+        <div class="py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
@@ -328,7 +328,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -348,25 +348,25 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Nome input-->
-                                <input name="nome" class="form-control" id="name" type="text" placeholder="Nome Completo *" data-sb-validations="required" />
+                                <input name="nome" class="form-control" id="name" type="text" placeholder="Nome Completo *" data-sb-validations="required" required="required" />
                                 <div   class="invalid-feedback" data-sb-feedback="name:required">Digite o se nome.</div>
                             </div>
                             <div class="form-group">
                                 <!-- Emails input-->
-                                <input name="email" class="form-control" id="email" type="email" placeholder="E-mail *" data-sb-validations="required,email" />
+                                <input name="email" class="form-control" id="email" type="email" placeholder="E-mail *" data-sb-validations="required,email" required="required" />
                                 <div   class="invalid-feedback" data-sb-feedback="email:required">Digite o seu E-mail</div>
                                 <div   class="invalid-feedback" data-sb-feedback="email:email">Este email não é valido.</div>
                             </div>
                             <div class="form-group mb-md-0">
                                 <!-- Telefone input-->
-                                <input name="telefone" class="form-control" id="phone" type="tel" placeholder="Telefone *" data-sb-validations="required" />
+                                <input maxlength="11" name="telefone" class="form-control" id="phone" type="tel" placeholder="Telefone * (Somente os números)" data-sb-validations="required" required="required" />
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Digite o seu telefone.</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Mensagem input-->
-                                <textarea name="mensagem" class="form-control" id="message" placeholder="Sua mensagem *" data-sb-validations="required"></textarea>
+                                <textarea name="mensagem" class="form-control" id="message" placeholder="Digite a sua mensagem *" data-sb-validations="required" required="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Digite a sua mensagem.</div>
                             </div>
                         </div>
