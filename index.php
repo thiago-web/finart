@@ -29,7 +29,7 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <!-- <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Nossos Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#team">Localização</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Solicitar um orçamento</a></li>
                     </ul>
@@ -94,10 +94,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img style="width: auto ; height: auto;" class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <img style="width: auto ; height: auto;" class="img-fluid" src="assets/img/portfolio/cartao-visita.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Cozinha</div>
+                                <div class="portfolio-caption-heading">Cartões de Visita</div>
                                 <div class="portfolio-caption-subheading text-muted" >Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -109,10 +109,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <img style="width: auto ; height: 200px;" class="img-fluid" src="assets/img/portfolio/banner.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Home Theater</div>
+                                <div class="portfolio-caption-heading">Banners</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -124,10 +124,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <img style="width: 100% ; height: auto;" class="img-fluid" src="assets/img/portfolio/logotipo.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Banheiro</div>
+                                <div class="portfolio-caption-heading">Logotipos</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Dormitórios</div>
+                                <div class="portfolio-caption-heading">Divulgação em Redes Sociais</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Closet</div>
+                                <div class="portfolio-caption-heading">Sacolas Kraft</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                                 <img class="img-fluid" src="assets/img/ambientes/7.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Studio</div>
+                                <div class="portfolio-caption-heading">Wind Banner</div>
                                 <div class="portfolio-caption-subheading text-muted">Imagem Ilustrativa</div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section" id="about">
+        <!-- <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Sobre nós</h2>
@@ -256,7 +256,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container ">
@@ -400,9 +400,11 @@
                     <div class="col-lg-3 text-lg-start">Copyright &copy; [Empresa] 2021 </div>
                     <div class="col-lg-3 text-lg-start"></div>
                     <div class="col-lg-3 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a> -->
+                        <a class="btn btn-dark btn-social mx-2" 
+                        href="https://m.facebook.com/eduardo.finart">
+                        <i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://api.whatsapp.com/send?phone=55199878141826&text=Boa%20tarde%2C%20estou%20interessado%20em%20seus%20servi%C3%A7os%2C%20posso%20ver%20o%20seu%20cat%C3%A1logo%20%3F"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <div class="col-lg-3 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Política de Privacidade</a>
@@ -424,7 +426,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Cartões de Visita</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/cartao-visita.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -457,9 +459,9 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Banners, Adesivos e Lonas</h2>
+                                    <h2 class="text-uppercase">Banners</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/banner.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -494,7 +496,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Logotipos</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logotipo.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
                                     <ul class="list-inline">
                                         <li>
@@ -527,7 +529,7 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Dormitórios</h2>
+                                    <h2 class="text-uppercase">Divulgação em Redes Sociais</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
@@ -562,7 +564,7 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Closet</h2>
+                                    <h2 class="text-uppercase">Sacolas Kraft</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>
@@ -632,7 +634,7 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Studio</h2>
+                                    <h2 class="text-uppercase">Wind Banner</h2>
                                     <p class="item-intro text-muted">Imagem ilustrativa</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/ambientes/7.jpg" alt="..." />
                                     <p>Use esta area para descrever o projeto. </p>

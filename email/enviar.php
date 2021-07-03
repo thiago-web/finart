@@ -1,5 +1,9 @@
-<?php
+<?php 
+// Inicia a sessão
 session_start();
+
+// Inclui o arquivo class.phpmailer.php localizado na mesma pasta do arquivo php 
+include "../assets/PHPMailer-master/PHPMailerAutoload.php"; 
 
 // Função para formatar o código
 function form_cod($mascara, $value){
@@ -23,90 +27,111 @@ function telefone($value){
 }
 
 
-
-
-
 // Dados do usuário
 $emailenviar  = $_POST['email'];
 $nome         = $_POST['nome'];
 $telefone     = $_POST['telefone'];
 $mensagem     = $_POST['mensagem'];
 
-// );
 
 // Váriáveis para enviar mensagem no WhatsApp
-$num_whats = telefone($telefone);
-$num_whats = to_numero($num_whats);
-$mensagem  = preg_replace('/[ -]+/' , '%20' , $mensagem);
-echo $mensagem;
-$link = "https://api.whatsapp.com/send?phone=55".$num_whats."&text=".$mensagem;
+$tel_destino   = '19987208587'; // Digite o número de destino
+$num_whats     = telefone($telefone);
+$num_whats     = to_numero($num_whats);
+$mensagem      = preg_replace('/[ -]+/' , '%20' , $mensagem);
 
-// Email para quem será enviado o formulário
+// Link para conversar por Whats App
 
-$destino     = $emailenviar;
-$assunto     = " Você possui uma nova mensagem de : | $nome";
-$data_envio  = date('d/m/Y');
-$hora_envio  = date('H:i');
+$link = "https://api.whatsapp.com/send?phone=55".$tel_destino."&text=".$mensagem;
 
 
-// É necessário indicar que o formato do e-mail é html
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= "From:  ".$nome." <".$emailenviar.">";
-//$headers .= "Bcc: $EmailPadrao\r\n";
+// Inicia a classe PHPMailer 
+$mail = new PHPMailer(); 
 
-// Estilização do Campo do Email
-// Compo E-mail
-$arquivo = "
-<style type='text/css'>
-body {
-margin:0px;
-font-family:Verdane;
-font-size:12px;
-color: #666666;
-}
-a{
-color: #666666;
-text-decoration: none;
-}
-a:hover {
-color: #FF0000;
-text-decoration: none;
-}
-</style>
-  <html>
-      <table class= 'table' width='510' border='1' cellpadding='1' cellspacing='1'>
-        <tr>
-            <tr>
-               <td width='500'>Nome:$nome</td>
-            </tr>
-            <tr>
-                <td width='320'>E-mail:<b>$emailenviar</b></td>
-            </tr>
-            <tr>
-                <td width='320'>Opções: [escolha] </td>
-            </tr>
-            <tr>
-                <td width='320'>
-                
-                Mensagem: $mensagem 
+// Método de envio 
+$mail->IsSMTP(); 
+
+// Enviar por SMTP 
+$mail->Host = "mail.dueeme.com.br"; 
+
+// Você pode alterar este parametro para o endereço de SMTP do seu provedor 
+$mail->Port = 587; 
 
 
-                </td>
-            </tr>
-          </td>
-        </tr>
-        <tr>
-          <td>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></td>
-        </tr>
-      </table>
-  </html>";
+// Usar autenticação SMTP (obrigatório) 
+$mail->SMTPAuth = true; 
 
-// $enviaremail = mail($destino, $assunto, $arquivo, $headers);
-// if($enviaremail)
-// {
-//     $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
-//     echo    ($mgm);
-// } 
-// else {}
+// Usuário do servidor SMTP (endereço de email) 
+// obs: Use a mesma senha da sua conta de email 
+$mail->Username = 'estetica@dueeme.com.br'; 
+$mail->Password = 'Olecran1.'; 
+
+// Configurações de compatibilidade para autenticação em TLS 
+$mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true ) ); 
+
+// Você pode habilitar esta opção caso tenha problemas. Assim pode identificar mensagens de erro. 
+// $mail->SMTPDebug = 2; 
+
+// Define o remetente 
+// Seu e-mail 
+$mail->From = "estetica@dueeme.com.br"; 
+
+// Seu nome 
+$mail->FromName = "[NOME DA EMPRESA]"; 
+
+// Define o(s) destinatário(s) 
+$mail->AddAddress($emailenviar, $nome); 
+
+// Opcional: mais de um destinatário
+// $mail->AddAddress('fernando@email.com'); 
+
+// Opcionais: CC e BCC
+// $mail->AddCC('joana@provedor.com', 'Joana'); 
+// $mail->AddBCC('roberto@gmail.com', 'Roberto'); 
+
+// Definir se o e-mail é em formato HTML ou texto plano 
+// Formato HTML . Use "false" para enviar em formato texto simples ou "true" para HTML.
+$mail->IsHTML(true); 
+
+// Charset (opcional) 
+$mail->CharSet = 'UTF-8'; 
+
+// Assunto da mensagem 
+$mail->Subject = "SOLICITAÇÃO DE ORÇAMENTO"; 
+
+// Corpo do email 
+$mail->Body = 'Olá '.$nome.', Tudo bem ? <br><br>
+
+Obrigado(a) por se interessar em nossos serviços!
+<br><br>
+Segue ao lado o link de nosso catálogo no WhatsApp, caso você não tenha sido redirecionado automaticamente: https://wa.me/c/5519987814182 .
+
+
+'; 
+
+// Opcional: Anexos 
+// $mail->AddAttachment("/home/usuario/public_html/documento.pdf", "documento.pdf"); 
+
+// Envia o e-mail 
+$enviado = $mail->Send(); 
+
+// Exibe uma mensagem de resultado 
+if ($enviado) 
+{ 
+    
+    header('location:'.$link.'');
+} else { 
+
+    ?>
+    <script type="text/javascript">
+        alert('Ops, solicitação não enviada, tente novamente mais tarde !');
+    </script>
+    <?php
+
+
+    // Erro:
+    // echo "Houve um erro enviando o email: ".$mail->ErrorInfo; 
+} 
+
+
 ?>
